@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-31</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="alert alert-warning alert-dismissible fade show">
+			<h2 class="text-center">Toast</h2>	
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<br><br>
+	<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+     <!--############ Live Toast Start Here ###########-->
+
+     <div class="d-flex justify-content-center">
+
+     <button type="button" class="btn btn-primary" onclick="Toast()">Live toast</button>
+
+     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+       <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+         <div class="toast-header">
+          <img src="Img/MY PIC.ico" class="rounded-circle me-2" alt="My Image" style="height:50px; width: 50px;">
+          <strong class="me-auto">Asp Prothes</strong>
+           <small>active 11 mins ago</small>
+           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+         </div>
+            <div class="toast-body">
+                 Hello, world! This is a toast message.
+            </div>
+       </div>
+     </div>
+
+    </div>
+<!--############ Live Toast End Here ###########-->
+
+
+     <br><br>
+
+
+     <!--############ Simple Toast Start Here ###########-->
+
+     <button type="button" class="btn btn-primary" onclick="ToastSimple()">Simple toast</button>
+
+       <div id="asp" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+         <div class="toast-header">
+           <img src="Img/MY PIC.ico" class="rounded-circle me-2" alt="My Image" style="height:50px; width: 50px;">
+           <strong class="me-auto">Asp Prothes</strong>
+           <small>active 11 mins ago</small>
+           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+         </div>
+            <div class="toast-body">
+                 Hello, world! This is a toast message.
+            </div>
+       </div>
+<!--############ Simple Toast End Here ###########-->
+
+
+
+
+
+
+</div>
+<br><br><br>
+<script src="Bootstrap_Min_Js_file/popper.min.js"></script>
+<script src="Bootstrap_Min_Js_file/bootstrap.min.js"></script>
+
+<!--########## Live Toast Js Code ###########-->
+<script>
+  var option = 
+  {
+      animation : true,
+      delay : 20000
+  };
+  function Toast() {
+      var toastHTMLElement = document.getElementById("liveToast");
+      var toastElement = new bootstrap.Toast(toastHTMLElement, option);
+      toastElement.show( );
+  }
+</script>
+
+
+<!--########## Simple Toast Js Code ###########-->
+<script>
+  var option = 
+  {
+      animation : true,
+      delay : 15000
+  };
+  function ToastSimple() {
+      var toastHTMLElement = document.getElementById("asp");
+      var toastElement = new bootstrap.Toast(toastHTMLElement, option);
+      toastElement.show( );
+  }
+</script>
+
+</body>
+</html>

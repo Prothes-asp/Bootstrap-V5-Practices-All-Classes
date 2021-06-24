@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-14</title>
+	<link rel="stylesheet" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+    	<div class="alert alert-warning alert-dismissible fade show">
+    		<h2 class="text-center">Input Groups And Addon</h2>  
+    		<button class="btn-close" data-bs-dismiss="alert"></button>
+  		</div>
+  		<br><br>
+  <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+    	<div class="mb-3 input-group">
+    			<span class="input-group-text">@</span>
+    		<input class="form-control" type="text" placeholder="Enter Text">
+    	</div>
+
+    	<div class="mb-3 input-group">
+    		<input class="form-control" type="email" placeholder="Enter Email" id="email">
+    			<label for="email" class="input-group-text">@example.com</label>
+    	</div>
+
+
+<br><br>
+		<label for="profile-url">Choose Profile Url</label>
+    	<div class="input-group">
+    		<input class="form-control" type="text">
+    		<span class="input-group-text">https://www.google.com</span>	
+    	</div>
+
+<br>	
+
+
+		<div class="input-group input-group-sm">
+			<span class="input-group-text">$</span>
+			<input class="form-control" type="number">
+			<span class="input-group-text">.00</span>
+		</div>
+<br>
+
+		<div class="input-group">
+			<span class="input-group-text">
+				<input type="checkbox" class="form-check-input">
+			</span>
+			<input type="text" class="form-control">
+		</div>
+
+<br>
+		<div class="input-group">
+			<span class="input-group-text">
+				<input type="radio" class="form-check-input">
+			</span>
+			<span class="input-group-text">$55.00</span>
+			<input type="text" class="form-control">
+		</div>
+
+
+<br>
+
+        <div class="input-group">
+        	<input type="text" class="form-control">
+        	<span class="input-group-text">
+        		<button type="button" class="btn btn-info">Search</button>
+        	</span>
+        </div>
+<br>
+		<div class="input-group">
+        	<input type="text" class="form-control">
+        	<span>
+        		<button type="button" class="btn btn-primary">Search</button>
+        	</span>
+        </div>
+<br><br>
+<hr>
+<!--########## Double Button ##########-->
+		<div class="input-group">
+			<button class="btn btn-outline-secondary">Button</button>
+			<button class="btn btn-outline-secondary">Button</button>
+			<input type="text" class="form-control">
+		</div>
+
+<br><br>
+
+<!--############ Drop Down Button ###########-->
+		<div class="dropdown input-group">
+  			<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="asp"data-bs-toggle="dropdown">
+    			Dropdown button
+  			</button>
+  			<ul class="dropdown-menu" aria-labelledby="#asp">
+    			<li><a class="dropdown-item" href="#">Action</a></li>
+    			<li><a class="dropdown-item" href="#">Another action</a></li>
+    			<div class="dropdown-divider"></div>
+    			<li><a class="dropdown-item" href="#">Something else here</a></li>
+  			</ul>
+  			<input type="text" class="form-control">
+  		</div>
+<br><br>
+
+
+<!--######## Spelt Button ########-->
+		<div class=" input-group">
+			<button type="button" class="btn btn-outline-secondary">My Button</button>
+			<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+				<span class="sr-only"></span> 
+			</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link One</a>
+				<a href="#" class="dropdown-item">Link Two</a>
+				<a href="#" class="dropdown-item">Link Three</a>
+				<div class="dropdown-divider"></div>
+				<a href="#" class="dropdown-item">Link Four</a>
+			</div>
+			<input type="text" class="form-control">
+		</div>
+
+
+    		<br><br><hr><br><br>
+		<!--######### Form Color Box #########-->
+		<label for="color" class="form-label fw-bold">
+			Color
+			<input type="color" id="color" class="form-control-color">
+		</label>
+
+
+
+
+		<!--######### Select Class #########-->
+		<select class="form-select form-select-lg">
+			<option value="1">One</option>
+			<option value="2" selected>Two</option>
+			<option value="3">Three</option>
+		</select>
+
+
+
+
+			<br><br>
+       <!--############ Inline Check And Button ############-->
+       	<div class="form-check form-check-inline">
+       		<label for="check" class="form-check-label"></label>
+       		<input type="checkbox" class="form-check-input" value="1" name="check">
+       	</div>
+       	<div class="form-check form-check-inline">
+       		<label for="radio" class="form-check-label"></label>
+       		<input type="radio" class="form-check-input" value="2" name="radio">
+       	</div>
+       	<div class="form-check form-check-inline">
+       		<label for="check" class="form-check-label"></label>
+       		<input type="checkbox" class="form-check-input" value="3" name="ckeck">
+       	</div>
+       	<div class="form-check form-check-inline">
+       		<label for="radio" class="form-check-label"></label>
+       		<input type="radio" class="form-check-input" value="4" name="radio">
+       	</div>
+        <!--########## Switch Button ########-->
+        <div class="form-check form-check-inline form-switch">
+        	<label for="check" class="form-check-label"></label>
+        	<input type="checkbox" class="form-check-input">
+        </div>
+
+        <div class="form-check form-check-inline form-switch">
+        	<label for="radio" class="form-check-label"></label>
+        	<input type="radio" class="form-check-input">
+        </div>
+				<br><br>
+
+
+
+
+<!--########## Form Range ##########-->
+		<div>
+			<label for="range" class="form-label">Range</label>
+			<input type="range" class="form-range">
+		</div>
+		<div>
+			<label for="range" class="form-label">Range</label>
+			<input type="range" class="form-range" min="0" max="10">
+		</div>
+
+	</div>
+
+
+<script src="Bootstrap_Min_Js_file/bootstrap.min.js"></script>
+<script src="Bootstrap_Min_Js_file/bootstrap.bundle.min.js"></script>	
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-13</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-4">
+<div class="alert alert-warning alert-dismissible fade show">
+    <h2 class="text-center">Forms_input_select_and_validation</h2>  
+    <button class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+  <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+
+  <br><br>
+
+
+		<form action="">
+<!--########### For Name Box ##########-->
+			<div class="mb-3">
+				<label for="name">Name: </label>
+				<input class="form-control form-control-lg" type="text" id="name" placeholder="Your Name">
+			</div>
+
+
+<!--########### For Email Box ##########-->
+			<div class="mb-3">
+				<label for="email">Email</label>
+				<input class="form-control form-control-sm" type="email" id="email" placeholder="Enter Email">
+				<small class="form-text text-muted">Your Email will not br shared will anyone</small>
+			</div>
+
+
+<!--########### For Password Box #########-->
+			<div class="mb-3">
+				<label for="password">Password</label>
+				<input class="form-control" type="password" id="password" placeholder="Enter Your Password" readonly>
+			</div>
+
+
+<!--########### For Gender Box ##########-->
+			<div class="mb-3">
+				<label for="gender">Gender</label>
+				<select class="form-control" name="" id="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			</div>
+
+
+<!--########### For Message Box ##########-->
+			<div class="mb-3">
+				<label for="message">Message</label>
+				<textarea class="form-control" name="" id="massage" cols="30" rows="3"></textarea>
+			</div>
+
+
+<!--########### For File Input Box ##########-->
+			<div class="mb-3">
+				<label for="file">File Input</label>
+				<input type="file" class="form-control"  id="file">
+				<small class="form-text text-muted">max 3mb size</small>
+			</div>
+
+
+
+<!--########### Fieldset ############-->
+			<fieldset>
+				<legend>What are You Using This Service For ?</legend>
+				<div class="form-check">
+					<label for="" class="form-check-label">
+						<input type="radio" value="personal" name="service" class="form-check-input" checked>
+						Personal
+					</label>
+				</div>
+
+
+				<div class="form-check">
+					<label for="" class="form-check-label"> 
+						<input type="radio" value="commersial_use" name="service" class="form-check-input"> Commersial Use
+					</label>
+				</div>
+
+				<div class="form-check">
+					<label for="" class="form-check-label"> 
+						<input type="radio" value="testing" name="service" class="form-check-input">
+						Testing
+					</label>
+				</div>
+			</fieldset>
+
+
+<!--############ Checkbox ###########-->
+			<div class="form-check mt-3">
+				<label for="check" class="form-check-label">
+					<input type="checkbox" class="form-check-input" id="check">
+					Sign Up For Newslatter
+				</label>
+			</div>
+			<button type="submit" class="mt-3 btn btn-outline-primary">Submit</button>
+		</form>
+
+
+
+<br><br>
+
+<!--########### Inline From ###########-->
+		<form action=""  class="form-grid">
+			<input class="form-control" type="text" id="username" placeholder="User Name">
+			<input class="form-control mt-2" type="password" id="password" placeholder="Enter Password">
+			<div class="form-check">
+				<label class="form-check-label mt-2" for="checkd">
+					<input class="form-check-input" type="checkbox">
+					Remember me
+				</label>
+			</div>
+			<button class="btn mt-2 btn-info" type="submit">Submit</button>
+		</form>
+
+<br><br><br>
+<!--############## Form Validation #############-->
+
+		<div class="mb-3">
+			<label for="username">Username </label>
+			<input class="form-control is-valid" type="text" id="username" placeholder="Enter User Name">
+			<div class="valid-feedback">Username available</div>
+			<small>Must be at least 8 Characters</small>
+		</div>
+		<div>
+			<label for="password">Password </label>
+			<input class="form-control is-invalid" type="password" id="username" placeholder="Enter User Name">
+			<div class="invalid-feedback">Password is not be safe</div>
+			<small>please use a strong password</small>
+		</div>
+
+
+
+<br><br><hr><br><br>
+
+
+<!--########### Validation main part with js ############-->
+
+	<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option value="barisal">Barisal</option>
+      <option value="dhaka">Dhaka</option>
+      <option value="rangpur">Rangpur</option>
+      <option value="barisal">Barisal</option>
+      <option value="barisal">Barisal</option>
+      <option value="barisal">Barisal</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+			
+
+
+	</div>
+
+
+
+
+<!--########### Validation js ############-->
+<script>
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+
+<script src="Bootstrap_Min_Js_file\bootstrap.min.js"></script>	
+</body>
+</html>

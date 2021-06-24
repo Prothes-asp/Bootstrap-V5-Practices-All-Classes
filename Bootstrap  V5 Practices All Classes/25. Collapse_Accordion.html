@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-25</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome/all.min.css">
+	<link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+	<style>
+		a{
+			text-decoration:none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="alert alert-warning alert-dismissible fade show">
+			<h2 class="text-center">Collapse_Accordion</h2>	
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<br><br>
+	<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+    <!--############# Button With Collapse ############-->
+
+        
+    <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#asp">Read More</button>
+
+    <div class="collapse" id="asp">
+        <div class="card" style="width:18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            b5
+          </div>
+        </div>
+    </div>
+
+
+	
+<br><br>
+
+
+
+
+
+<!--############# Accrodion ############-->
+
+<div id="accrodion-project" role="tablist">
+	<div class="card">
+		<div class="card-header" role="tab" style="cursor:pointer;">
+			<h5 class="mb-0" data-bs-target="#sm" data-bs-toggle="collapse">
+				Section-1
+			</h5>
+		</div>
+		<div class="collapse show" id="sm" data-bs-parent="#accrodion-project">
+			<div class="card-body">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic sapiente laborum totam natus? In ullam perspiciatis, fuga earum porro molestias, sed necessitatibus, corrupti obcaecati maiores exercitationem corporis vero dignissimos!
+				</p>
+			</div>
+		</div>
+	</div>
+    <!-- Section-2 -->
+	<div class="card">
+		<div class="card-header" role="tab" style="cursor:pointer;">
+			<h5 class="mb-0" data-bs-target="#sp" data-bs-toggle="collapse">
+				Section-2
+			</h5>
+		</div>
+		<div class="collapse" id="sp" data-bs-parent="#accrodion-project">
+			<div class="card-body">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic sapiente laborum totam natus? In ullam perspiciatis, fuga earum porro molestias, sed necessitatibus, corrupti obcaecati maiores exercitationem corporis vero dignissimos!
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- Section-3 -->
+	<div class="card">
+		<div class="card-header" role="tab" style="cursor:pointer;">
+			<h5 class="mb-0" data-bs-target="#sps" data-bs-toggle="collapse">
+				Section-3
+			</h5>
+		</div>
+		<div class="collapse" id="sps" data-bs-parent="#accrodion-project">
+			<div class="card-body">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic sapiente laborum totam natus? In ullam perspiciatis, fuga earum porro molestias, sed necessitatibus, corrupti obcaecati maiores exercitationem corporis vero dignissimos!
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<br><br><br>
+<script src="Bootstrap_Min_Js_file\bootstrap.min.js"></script>
+</body>
+</html>

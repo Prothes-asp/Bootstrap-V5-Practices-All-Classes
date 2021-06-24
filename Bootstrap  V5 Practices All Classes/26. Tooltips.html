@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-26</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="alert alert-warning alert-dismissible fade show">
+			<h2 class="text-center">Tooltips</h2>	
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<br><br>
+	<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+    
+    <!--######### Tooltips ########-->
+	<button type="button" class="btn btn-info me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip top">Tooltip top</button>
+
+	<button type="button" class="btn btn-info me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip bottom">Tooltip Bottom</button>
+
+<br><br>
+     
+	<button type="button" class="btn btn-info me-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip right">Tooltip Right</button>
+
+	<button type="button" class="btn btn-info " data-bs-toggle="tooltip" 	data-bs-placement="left" title="Tooltip left">Tooltip Left</button>
+
+<hr><br><br><br>
+
+<!--############ Tooltip With Html ############-->
+<button type="button" class="btn btn-success ms-5" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<h2>Tooltip With Html</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa pariatur repudiandae nam harum sit eius!</p>">Tooltip With Html</button>
+
+<br><hr>
+
+
+
+
+
+
+
+</div>
+<br><br><br>
+<script src="Bootstrap_Min_Js_file/popper.min.js"></script>
+<script src="Bootstrap_Min_Js_file\bootstrap.min.js"></script>
+
+<!--################# Trigger With Js ###############-->
+
+<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+
+</body>
+</html>

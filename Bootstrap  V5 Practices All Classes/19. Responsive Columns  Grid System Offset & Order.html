@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-19</title>
+	<link rel="stylesheet" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome/all.min.css">
+	<link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="alert alert-warning alert-dismissible fade show">
+			<h2 class="text-center">Responsive Columns/Grid System & Offset & Order</h2>	
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<br><br>
+	<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+	<!--######### Auto layout columns #########-->
+
+	<div class="row">
+		<div class="col">
+			Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Impedit aliquid sequi corrupti vitae eveniet aliquam officia, ex maxime temporibus voluptatem error quidem quae iste est necessitatibus expedita possimus suscipit provident.
+		</div>
+		<div class="col">
+			Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Impedit aliquid sequi corrupti vitae eveniet aliquam officia, ex maxime temporibus voluptatem error quidem quae iste est necessitatibus expedita possimus suscipit provident.
+		</div>
+		<div class="col">
+			Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Impedit aliquid sequi corrupti vitae eveniet aliquam officia, ex maxime temporibus voluptatem error quidem quae iste est necessitatibus expedita possimus suscipit provident.
+		</div>
+		<div class="col">
+			Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Impedit aliquid sequi corrupti vitae eveniet aliquam officia, ex maxime temporibus voluptatem error quidem quae iste est necessitatibus expedita possimus suscipit provident.
+		</div>
+	</div>
+
+
+<br><br><br>
+
+
+	<!--############### Responsive Columns When Cheack Responsive Then Deffirent Style Show Column ##############-->
+	<div class="row">
+		<div class="col-12 col-sm-4 col-md-5 col-lg-6 col-xl-8">
+			<h5>Colums</h5>
+			Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quod officiis rerum sunt, dolorem, culpa dolor nobis odio perferendis praesentium nam corrupti, neque numquam. Repellat cumque odit pariatur quas culpa, alias.
+		</div>
+		<div class="col-12 col-sm-4 col-md-5 col-lg-4 col-xl-2">
+			<h5>Colums</h5>
+			Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quod officiis rerum sunt, dolorem, culpa dolor nobis odio perferendis praesentium nam corrupti, neque numquam. Repellat cumque odit pariatur quas culpa, alias.
+		</div>
+		<div class="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+			<h5>Colums</h5>
+			Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Quod officiis rerum sunt, dolorem, culpa dolor nobis odio perferendis praesentium nam corrupti, neque numquam. Repellat cumque odit pariatur quas culpa, alias.
+		</div>
+	</div>
+	
+
+<br><br>
+
+	<!--######### Nested Grid #########-->
+
+	<div class="row">
+		<div class="col">
+			<div class="card">
+				<div class="card-body">
+					<h3>Asp</h3>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit.</p>
+					<div class="row">
+						<div class="col mt-2">
+							<div class="card">
+								<div class="car-body">
+									<h3>Sm</h3>
+									<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Omnis cupiditate assumenda voluptates.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col mt-2">
+							<div class="card">
+								<div class="car-body">
+									<h3>Sm</h3>
+									<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Omnis cupiditate assumenda voluptates.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<br><br><br>
+<!--########### Offseting Columns ############-->
+	<div class="row">
+		<div class="col-3 offset-md-2">
+			<h3>Asp</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus non optio quo ea vel aspernatur culpa libero aliquid distinctio!</p>
+		</div>
+		<div class="col-3 offset-3 offset-sm-6 offset-md-2">
+			<h3>Sm</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus non optio quo ea vel aspernatur culpa libero aliquid distinctio!</p>
+		</div>
+	</div>
+
+<br><br><br>
+
+	<!--################ Ordering ###############-->
+	<div class="row">
+		<div class="col order-last">
+			<h3>First Columnn</h3>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, aspernatur!</p>
+		</div>
+		<div class="col order-first">
+			<h3>Seceond Columnn</h3>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, aspernatur!</p>
+		</div>
+	</div>
+
+
+
+   <br><br><br>
+   <div class="row">
+		<div class="col order-3">
+			<h3>First Columnn</h3>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, aspernatur!</p>
+		</div>
+		<div class="col order-1">
+			<h3>Seceond Columnn</h3>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, aspernatur!</p>
+		</div>
+		<div class="col order-2">
+			<h3>Third Columnn</h3>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, aspernatur!</p>
+		</div>
+	</div>
+
+
+</div>
+<br><br><br>
+<script src="Bootstrap_Min_Js_file/bootstrap.min.js"></script>
+</body>
+</html>

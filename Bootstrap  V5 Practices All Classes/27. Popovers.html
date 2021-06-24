@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-27</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="alert alert-warning alert-dismissible fade show">
+			<h2 class="text-center">Popovers</h2>	
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<br><br>
+	<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+     <!--########### Popover ##########-->
+     <div class="d-flex justify-content-center">
+
+    <button type="button" class="btn btn-info me-3" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="A Quick Brown Fox Jumps Over The Lazy Dog" title="Popover top">Popover top</button>
+
+	<button type="button" data-bs-content="A Quick Brown Fox Jumps Over The Lazy Dog" class="btn btn-success me-3" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover bottom">Popover Bottom</button>
+
+<br><br>
+     
+	<button type="button" data-bs-content="A Quick Brown Fox Jumps Over The Lazy Dog" class="btn btn-danger me-3" data-bs-toggle="popover" data-bs-placement="right" title="Popover right">Popover Right</button>
+
+	<button type="button" data-bs-content="A Quick Brown Fox Jumps Over The Lazy Dog" class="btn btn-warning " data-bs-toggle="popover" 	data-bs-placement="left" title="Popover left">Popover Left</button>
+</div>
+<hr><br><br><br>
+
+
+<!--########### Dismissable Popovers ##########-->
+<div class="d-flex justify-content-center">
+
+<button type="button" class="btn btn-secondary" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="A Quick Brown Fox Jumps Over The Lazy Dog" title="Dismissable Popovers">Dismissable Popovers</button>
+
+</div>
+
+
+
+
+	</div>
+	<br><br><br>
+	<script src="Bootstrap_Min_Js_file/popper.min.js"></script>
+	<script src="Bootstrap_Min_Js_file\bootstrap.min.js"></script>
+	
+	<!--################# Trigger With Js ###############-->
+	
+	<script>
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		return new bootstrap.Popover(popoverTriggerEl)
+	})
+	</script>
+	
+	
+	</body>
+	</html>

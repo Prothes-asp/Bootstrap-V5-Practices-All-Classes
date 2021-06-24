@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-23</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome/all.min.css">
+	<link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+	<style>
+		.row-h1{background-color:#0a8ae6; height:150px;}
+		.item-h1{border:2px solid #f60;}
+	</style>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="alert alert-warning alert-dismissible fade show">
+			<h2 class="text-center">Auto_Margin,_Wrap_&_Ordering</h2>	
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<br><br>
+	<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+  
+	
+   <!-- ########### Margin Auto ############ -->
+   <div class="d-flex row-h1">
+		<div class="item-h1">M-End</div>
+		<div class="item-h1">M-End</div>
+		<div class="item-h1 ms-auto">M-End</div>
+   </div>
+<br>
+    <div class="d-flex row-h1">
+		<div class="item-h1 me-auto">M-End</div>
+		<div class="item-h1">M-End</div>
+		<div class="item-h1">M-End</div>
+	</div>
+
+<br>
+    <div class="d-flex flex-column row-h1">
+		<div class="item-h1">M-End</div>
+		<div class="item-h1">M-End</div>
+		<div class="item-h1 mt-auto">M-End</div>
+	</div>
+<br>
+    <div class="d-flex flex-column row-h1">
+		<div class="item-h1 mb-auto">M-End</div>
+		<div class="item-h1">M-End</div>
+		<div class="item-h1">M-End</div>
+	</div>
+
+
+<hr><br>
+    <!--########### No-Wrap ##########-->
+
+    <div class="d-flex flex-nowrap row-h1">
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+		<div class="item-h1">No-Wrap</div>
+	</div>
+
+
+<br>
+	 
+<div class="d-flex flex-wrap row-h1">
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+	<div class="item-h1">Wrap</div>
+</div>
+
+<br><hr>
+
+
+<!--############ Ordering ############-->
+<div class="d-flex row-h1">
+	<div class="item-h1 order-4">Ordering 1</div>
+	<div class="item-h1 order-3">Ordering 2</div>
+	<div class="item-h1 order-2">Ordering 3</div>
+	<div class="item-h1 order-1">Ordering 4</div>
+</div>
+
+<br>
+
+<!--############ Responsive Ordering ############-->
+<div class="d-flex row-h1">
+	<div class="item-h1 order-3 order-sm-1 order-md-3">Ordering 1</div>
+	<div class="item-h1 order-2 order-sm-3 order-md-2">Ordering 2</div>
+	<div class="item-h1 order-1 order-sm-2 order-md-1">Ordering 3</div>
+</div>
+
+
+
+</div>
+<br><br><br>
+<script src="Bootstrap_Min_Js_file\bootstrap.min.js"></script>
+</body>
+</html>

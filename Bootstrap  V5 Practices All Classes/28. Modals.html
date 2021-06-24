@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Part-28</title>
+	<link rel="stylesheet" href="Bootstrap_Min_Css_file\bootstrap.min.css">
+  <style>
+    input[type="radio"]:checked+label{
+        color:gold;
+      }
+      sup{
+        color: red;
+      }
+  </style>
+</head>
+<body>
+
+	<div class="containe m-5">
+		<div class="alert alert-warning alert-dismissible fade show">
+			<h2 class="text-center">Modals</h2>	
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<br><br>
+	<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+
+
+
+
+<!--######## Modal Project ########-->
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open modal</button>
+
+<div class="modal fade" id="exampleModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br><br><hr><br><br>
+
+<!--############# 2nd Button ##############-->
+
+<button class="btn btn-outline-danger m-4" type="button" data-bs-toggle="modal" data-bs-target="#aspsm">Asp</button>
+
+<div class="modal fade" id="aspsm">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aspsm">Choose Option</h5>
+          <button class="btn btn-close " type="button" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3 ">
+            <span class="me-2 fw-bold">Marital-Status: <sup>*</sup></span>
+            <input type="radio" value="married" class="form-check-input" name="M/UN-M status">
+            <label for="married" class="form-label me-2">Married</label>
+            <input type="radio" value="unmarried" class="form-check-input" name="M/UN-M status">
+            <label for="unmarried" class="form-label">Unmarried</label>
+          </div>
+          <div class="mb-3">
+            <label for="massage" class="form-label fw-bold">Text-message :</label>
+            <textarea name="" id="massage" class="form-control" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <input type="submit" value="Submit" class="btn btn-outline-primary">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--############# 3rd Button ##############-->
+
+  <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#asp">Send Message</button>
+
+  <div class="modal fade" id="asp">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="asp">Text-Message</h5>
+          <button class="btn btn-close " type="button" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Recipient:</label>
+            <input type="email" placeholder="@example.com" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="massage" class="form-label fw-bold">Text-message :</label>
+            <textarea name="" id="massage" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-outline-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--############# 4th Text ##############-->
+
+  <h2 style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#asp">Send Message</h2>
+
+  <div class="modal fade" id="asp">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="asp">Text-Message</h5>
+          <button class="btn btn-close " type="button" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Recipient:</label>
+            <input type="email" placeholder="@example.com" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="massage" class="form-label fw-bold">Text-message :</label>
+            <textarea name="" id="massage" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-outline-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+	<br><br><br>
+	</div>
+<script src="Bootstrap_Min_Js_file/bootstrap.min.js"></script>
+</body>
+</html>
